@@ -2184,4 +2184,7 @@
     .gateway--settings-table table{
         width:800px
     }
+    .param--wrapper{
+        padding-left: 0;
+    }
 }
