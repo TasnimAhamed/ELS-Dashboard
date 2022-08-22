@@ -1344,7 +1344,11 @@ p{
 .system--template-add-dropdown .template--name,
 .system--template-add-dropdown .selectable--color,
 .system--template-add-dropdown .screen-orientation,
-.system--template-add-dropdown .screen--size{
+.system--template-add-dropdown .screen--size,
+.template--name input,
+.select--username select,
+.system--role select,
+.assign--authority select{
     margin-bottom: 16px;
 }
 
@@ -1352,7 +1356,11 @@ p{
 .add--store-dropdown .add--store-name p,
 .add--store-dropdown .add--store-address p,
 .add--store-dropdown .add--store-image p,
-.system--template-add-dropdown p{
+.system--template-add-dropdown p,
+.template--name p,
+.select--username p,
+.system-role p,
+.assign-authority p{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
@@ -1364,7 +1372,11 @@ p{
 .add--store-dropdown .add--store-name input,
 .add--store-dropdown .add--store-address input,
 .system--template-add-dropdown input,
-.system--template-add-dropdown select{
+.system--template-add-dropdown select,
+.template--name input,
+.select--username select,
+.system--role select,
+.assign--authority select{
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 100%;
@@ -1765,7 +1777,7 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 23px;
     height: 36px;
 }
 .upload--file input{
