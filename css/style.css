@@ -1868,3 +1868,79 @@ p{
     margin-left:auto;
     margin-top: 12px;
 }
+.basic--param-settings h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+}
+.param--wrapper{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 24px;
+    max-width: 550px;
+    width: 100%;
+    justify-content: space-between
+}
+.param--wrapper .param--content label{
+    font-family: 'ABeeZee',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.8px;
+    line-height: 21px;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.param--wrapper .param--content select,
+.param--wrapper .param--content input{
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding:5px 12px;
+    outline:0;
+    background:#F3F3F3;
+    max-width:220px;
+}
+.param--wrapper .param--content span{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.8px;
+    line-height: 21px;
+    color: #000000;
+    padding-left: 5px;
+}
+.param--save-btn{
+    margin-left: 60px;
+}
+.param--save{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    background: linear-gradient(0deg, #FFB966, #FFB966), linear-gradient(0deg, #E4E4E4, #E4E4E4), linear-gradient(0deg, #E4E4E4, #E4E4E4), #E4E4E4;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 90px;
+    height: 36px;
+}
+.basic--set-title{
+    margin-bottom: 24px;
+}
+.basic--set-title h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
