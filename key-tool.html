@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFull</title>
+
+    <!--Bootstap CSS File-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Theme CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media CSS File -->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+    <main class="main--area">
+
+        <!-- ELS Side Nav -->
+
+        <header class="esl--sidenav-area" id="esl-sidenav">
+            <div class="nav--collapse-btn">
+                <button class="btn" id="collapse--nav">
+                    <img src="./img/collapse--arrow.svg" alt="ESL">
+                </button>
+            </div>
+            <div class="main--menu-area">
+                <div class="main--menu-wrapper">
+                    <ul class="main--menu-list">
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/dashboard.png" alt="ESL">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/scene.png" alt="ESL">
+                                <span>Scenes</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/cameras.png" alt="ESL">
+                                <span>Cameras</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/trash.png" alt="ESL">
+                                <span>Trash</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/settings.png" alt="ESL">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="menu--item store--label dropend">
+                            <a class="menu--link dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./img/store.png" alt="ESL">
+                                <span>Stores Label</span>
+                            </a>
+                            <ul class="dropdown-menu store--label-dropdown dropdown-menu-lg-end">
+                                <li class="store--management dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" >Store Management</a>
+                                    <ul class="dropdown-menu store--management-dropdown dropdown-menu-lg-end">
+                                        <li class="store--id dropend">
+                                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Store #1</a>
+                                            <ul class="dropdown-menu store--id-dropdown dropdown-menu-lg-end">
+                                                <li><a class="dropdown-item" href="#">Store Overview</a></li>
+                                                <li><a class="dropdown-item" href="#">Store Data</a></li>
+                                                <li><a class="dropdown-item" href="#">Store Template</a></li>
+                                                <li><a class="dropdown-item" href="#">Gateway Management</a></li>
+                                                <li><a class="dropdown-item" href="#">Device Management</a></li>
+                                                <li><a class="dropdown-item" href="#">Operation Record</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Store #2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">System Data</a></li>
+                                <li><a class="dropdown-item" href="#">System Template</a></li>
+                                <li><a class="dropdown-item" href="#">Authority Management</a></li>
+                                <li><a class="dropdown-item" href="#">System settings</a></li>
+                                <li><a class="dropdown-item" href="#">System Record</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admin--menu-list">
+                    <a href="" class="menu--link">
+                        <img src="./img/admin.png" alt="ESL">
+                        <span>Admin</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ESL Main Content -->
+    
+        <div class="main--area-wrapper">
+            
+            <div class="top--nav">
+                <div class="page--heading">
+                    <h2>System Settings</h2>
+                </div>
+                <div class="notification--profile">
+                    <a href="#" class="notification">
+                        <img src="./img/notifications.png" alt="ESL">
+                    </a>
+                    <a href="#" class="profile">
+                        <img src="./img/profile--img.png" alt="ESL">
+                    </a>
+                    <button id="toggle__menu" class="d-xl-none">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="management--btn-wrapper">
+                <div class="management-btns">
+                    <a href="/data-field.html" class="btn data--feidl">Data Field</a>
+                    <a href="/gateway-settings.html" class="btn gateway--settings">Gateway Settings</a>
+                    <a href="/param-settings.html" class="btn param--settings">Param Settings</a>
+                    <a href="/key-tool.html" class="btn key--role active">Key Tool</a>
+                </div>
+                <div class="add--management">
+                    <div class="store--btns-wrapper dropdown-center">
+                        <button class="btn add--store-btn">
+                            <span>Create</span>
+                            <img src="./img/plus--btn.png" alt="ESL">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="public--private-key-wrapper">
+                <div class="private--key">
+                    <label for="">Application private Key</label>
+                    <textarea name="" id=""></textarea>
+                    <button type="submit" class="submit">Copy</button>
+                </div>
+                <div class="public--key">
+                    <label for="">Application public Key</label>
+                    <textarea name="" id=""></textarea>
+                    <button type="submit" class="submit">Copy</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Script File -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -774,6 +774,7 @@
     }
     .add--management .add--store-btn{
         width: 124px;
+        font-size:15px;
     }
     .add--management .delete--btn{
         margin-top: 16px;
@@ -1621,7 +1622,9 @@
     .search--role--store-wrapper .roles--wrapper{
         margin-bottom: 16px;
     }
-
+    .data--field-table table{
+        width: 1000px
+    }
 }
 
 @media (min-width:320px) and (max-width:767px){
@@ -2176,5 +2179,9 @@
 
     .search--role--store-wrapper .store--select-wrapper{
         margin-right: 0;
+    }
+    .data--field-table table,
+    .gateway--settings-table table{
+        width:800px
     }
 }
