@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFull</title>
+
+    <!--Bootstap CSS File-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Theme CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media CSS File -->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+    <main class="main--area">
+
+        <!-- ELS Side Nav -->
+
+        <header class="esl--sidenav-area" id="esl-sidenav">
+            <div class="nav--collapse-btn">
+                <button class="btn" id="collapse--nav">
+                    <img src="./img/collapse--arrow.svg" alt="ESL">
+                </button>
+            </div>
+            <div class="main--menu-area">
+                <div class="main--menu-wrapper">
+                    <ul class="main--menu-list">
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/dashboard.png" alt="ESL">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/scene.png" alt="ESL">
+                                <span>Scenes</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/cameras.png" alt="ESL">
+                                <span>Cameras</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/trash.png" alt="ESL">
+                                <span>Trash</span>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="" class="menu--link">
+                                <img src="./img/settings.png" alt="ESL">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="menu--item store--label dropend">
+                            <a class="menu--link dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./img/store.png" alt="ESL">
+                                <span>Stores Label</span>
+                            </a>
+                            <ul class="dropdown-menu store--label-dropdown dropdown-menu-lg-end">
+                                <li class="store--management dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" >Store Management</a>
+                                    <ul class="dropdown-menu store--management-dropdown dropdown-menu-lg-end">
+                                        <li class="store--id dropend">
+                                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Store #1</a>
+                                            <ul class="dropdown-menu store--id-dropdown dropdown-menu-lg-end">
+                                                <li><a class="dropdown-item" href="#">Store Overview</a></li>
+                                                <li><a class="dropdown-item" href="#">Store Data</a></li>
+                                                <li><a class="dropdown-item" href="#">Store Template</a></li>
+                                                <li><a class="dropdown-item" href="#">Gateway Management</a></li>
+                                                <li><a class="dropdown-item" href="#">Device Management</a></li>
+                                                <li><a class="dropdown-item" href="#">Operation Record</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Store #2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">System Data</a></li>
+                                <li><a class="dropdown-item" href="#">System Template</a></li>
+                                <li><a class="dropdown-item" href="#">Authority Management</a></li>
+                                <li><a class="dropdown-item" href="#">System settings</a></li>
+                                <li><a class="dropdown-item" href="#">System Record</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admin--menu-list">
+                    <a href="" class="menu--link">
+                        <img src="./img/admin.png" alt="ESL">
+                        <span>Admin</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ESL Main Content -->
+    
+        <div class="main--area-wrapper">
+            
+            <div class="top--nav">
+                <div class="page--heading">
+                    <h2>Store Management</h2>
+                </div>
+                <div class="notification--profile">
+                    <a href="#" class="notification">
+                        <img src="./img/notifications.png" alt="ESL">
+                    </a>
+                    <a href="#" class="profile">
+                        <img src="./img/profile--img.png" alt="ESL">
+                    </a>
+                    <button id="toggle__menu" class="d-xl-none">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="search--store-btn">
+                <div class="search--input-wrapper">
+                    <input type="text" class="search--input" placeholder="Search Store">
+                </div>
+                <div class="store--btns-wrapper dropdown-center">
+                    <button class="btn add--store-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" >
+                        <span>Add Store</span>
+                        <img src="./img/plus--btn.png" alt="ESL">
+                    </button>
+                    <div class="dropdown-menu add--store-dropdown">
+                        <div class="add--store-number">
+                            <p>Store Number</p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="add--store-name">
+                            <p>Store Name</p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="add--store-address">
+                            <p>Store Address</p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="store--img-wrapper">
+                            <p>Store image</p>
+                            <div class="store--img-input">
+                                <label for="store-img">
+                                    <img src="./img/plus-gray.png" alt="ESL">
+                                </label>
+                                <input type="file" name="store-img" id="store-img">
+                            </div>
+                        </div>
+                        <div class="add--btn-wrapper">
+                            <button class="btn add--btn">
+                                <span>
+                                    Add
+                                </span>
+                                <img src="./img/plus--btn.png" alt="ESL">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store--progess-main-content">
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+
+                <!-- Store Progress -->
+
+                <div class="store--progress">
+                    <div class="edit--store-progress">
+                        <button class="btn edit--progress-btn">
+                            <img src="./img/ci_edit.png" alt="ESL">
+                        </button>
+                    </div>
+                    <div class="progress--img">
+                        <svg width="216" height="215" viewBox="0 0 216 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M199.456 107.348C208.101 107.348 215.291 114.392 214.033 122.945C211.451 140.507 204.534 157.241 193.801 171.584C179.926 190.126 160.421 203.677 138.203 210.21C115.985 216.743 92.2491 215.907 70.5461 207.827C53.7576 201.576 38.8837 191.251 27.2058 177.881C21.519 171.371 23.7513 161.556 31.0198 156.876C38.2884 152.197 47.9318 154.41 54.0022 160.565C61.7211 168.39 71.0961 174.489 81.5142 178.368C96.8542 184.079 113.631 184.67 129.335 180.053C145.039 175.435 158.826 165.857 168.632 152.751C175.293 143.85 179.874 133.648 182.128 122.889C183.901 114.429 190.812 107.348 199.456 107.348Z" fill="#0F00BA"/>
+                            <path d="M43.2558 172.048C37.1432 178.161 27.078 178.264 21.9197 171.327C12.184 158.235 5.52193 143.034 2.52841 126.856C-1.41888 105.523 1.19816 83.495 10.0338 63.6811C18.8695 43.8672 33.508 27.1998 52.0157 15.8807C66.0515 7.29649 81.8118 2.09457 98.0574 0.588232C106.665 -0.209881 113.315 7.34663 112.852 15.9787C112.39 24.6108 104.949 31.1326 96.4059 32.4502C86.5402 33.9717 77.0201 37.4356 68.4166 42.6974C55.335 50.6979 44.9883 62.4787 38.7431 76.4835C32.4979 90.4882 30.6481 106.058 33.4381 121.136C35.2731 131.053 39.0581 140.45 44.519 148.806C49.2481 156.042 49.3683 165.936 43.2558 172.048Z" fill="#0F00BA"/>
+                            <path d="M27.1369 64.4465C19.5015 60.3934 16.4538 50.7998 21.5745 43.8352C34.2586 26.5838 51.9013 13.4213 72.3216 6.22535C97.6928 -2.7152 125.498 -1.79198 150.22 8.81184C174.942 19.4157 194.775 38.9252 205.784 63.4698C214.645 83.2249 217.268 105.08 213.511 126.16C211.994 134.67 202.942 139.074 194.743 136.336C186.544 133.597 182.233 124.692 183.232 116.105C184.799 102.633 182.731 88.8839 177.102 76.3342C169.321 58.9856 155.303 45.196 137.829 37.701C120.355 30.2061 100.702 29.5535 82.7691 35.8728C69.7967 40.4442 58.4102 48.4222 49.7289 58.8435C44.196 65.4853 34.7723 68.4995 27.1369 64.4465Z" fill="#0F00BA"/>
+                        </svg>                            
+                    </div>
+                    <div class="progress--details">
+                        <p>
+                            <span></span>
+                            Open
+                        </p>
+                        <h4>Name: Store #1 </h4>
+                        <p>Identifier: SN1</p>
+                        <p>Address: 71 - 75 Shelton St - London</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Script File -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
