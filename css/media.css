@@ -1,3 +1,4 @@
+
 @media (min-width:1600px) and (max-width:1799px){
     .subheading{
         font-size: 22px;
@@ -732,7 +733,9 @@
     }
 
     .all--btns-wrapper{
-        justify-content:flex-end;
+        -webkit-box-pack:end;
+            -ms-flex-pack:end;
+                justify-content:flex-end;
     }
     .add--store-btn .add--btn, .import--btn, .export--btn, .delete--btn, .refresh--btn{
         width: 124px;
@@ -747,7 +750,8 @@
     }
     .single--template{
         max-width: 46%;
-        flex-basis: 46%;
+        -ms-flex-preferred-size: 46%;
+            flex-basis: 46%;
     }
 
     .single--template-details{
@@ -764,8 +768,16 @@
     }
     .add--management{
 
-        flex-direction: column;
-        justify-content:flex-end;
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+        -webkit-box-pack:end;
+            -ms-flex-pack:end;
+                justify-content:flex-end;
         
     }
     .add--management .import--btn{
@@ -1079,11 +1091,17 @@
         position: fixed;
         top: 0;
         left: 0;
-        transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+            -ms-transform:translateX(-100%);
+                transform:translateX(-100%);
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
     }
     .esl--sidenav-area.active{
-        transform:translateX(0);
+        -webkit-transform:translateX(0);
+            -ms-transform:translateX(0);
+                transform:translateX(0);
     }
 
     .main--menu-area{
@@ -1132,13 +1150,16 @@
 
     .store--progress{
         max-width:47%;
-        flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%;
         margin-right: 16px;
         margin-bottom: 32px;
     }
 
     .all--btns-wrapper{
-        justify-content:flex-end;
+        -webkit-box-pack:end;
+            -ms-flex-pack:end;
+                justify-content:flex-end;
     }
     
     .add--btn, .import--btn, .export--btn, .delete--btn,.add--store-btn{
@@ -1160,8 +1181,16 @@
     }
     .add--management{
 
-        flex-direction: column;
-        justify-content:flex-end;
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+        -webkit-box-pack:end;
+            -ms-flex-pack:end;
+                justify-content:flex-end;
         
     }
     .management-btns a{
@@ -1511,11 +1540,17 @@
         position: fixed;
         top: 0;
         left: 0;
-        transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+            -ms-transform:translateX(-100%);
+                transform:translateX(-100%);
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
     }
     .esl--sidenav-area.active{
-        transform:translateX(0);
+        -webkit-transform:translateX(0);
+            -ms-transform:translateX(0);
+                transform:translateX(0);
     }
 
     .main--menu-area{
@@ -1558,13 +1593,16 @@
 
     .store--progress{
         max-width:47%;
-        flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%;
         margin-right: 16px;
         margin-bottom: 16px;
     }
 
     .all--btns-wrapper{
-        justify-content:flex-end;
+        -webkit-box-pack:end;
+            -ms-flex-pack:end;
+                justify-content:flex-end;
     }
     .import--btn{
         margin-bottom: 16px;
@@ -1582,24 +1620,32 @@
 
     .system--template-search-and-select{
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 16px;
     }
     .system--template--btns {
         width: 100%;
         text-align: center;
-        justify-content:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
     }
     .single--template{
         width: 100%;
         max-width:100%;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-right: 0;
     }
 
     .management--btn-wrapper{
-        flex-wrap: wrap;
-        justify-content:center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
         padding-right: 0;
     }
     .management-btns a{
@@ -1609,7 +1655,9 @@
 
     .add--management {
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .search--role--store-wrapper .search--wrapper, 
@@ -2017,11 +2065,17 @@
         position: fixed;
         top: 0;
         left: 0;
-        transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+            -ms-transform:translateX(-100%);
+                transform:translateX(-100%);
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
     }
     .esl--sidenav-area.active{
-        transform:translateX(0);
+        -webkit-transform:translateX(0);
+            -ms-transform:translateX(0);
+                transform:translateX(0);
     }
 
     .main--menu-area{
@@ -2054,7 +2108,10 @@
     }
 
     .search--store-btn{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .search--store-btn{
@@ -2069,14 +2126,17 @@
 
     .store--progress{
         max-width:100%;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 16px;
     }
 
 
     .all--btns-wrapper{
-        justify-content:space-between;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
     }
     .import--btn{
         margin-bottom: 16px;
@@ -2096,7 +2156,9 @@
     }
     .system--template-search-wrapper{
         padding-right: 0;
-        justify-content:center;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
     }
     .system--template-search-and-select .search--box,
     .system--template-search-and-select .all--size-box,
@@ -2116,7 +2178,8 @@
         width:100%;
     }
     .system--template--btns {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         text-align: center;
     }
 
@@ -2124,7 +2187,8 @@
     .single--template{
         width: 100%;
         max-width:100%;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-right: 0;
         padding:16px;
     }
@@ -2141,8 +2205,11 @@
         max-width: 100%;
     }
     .management--btn-wrapper{
-        flex-wrap: wrap;
-        justify-content:center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
         padding-right: 0;
     }
     .management-btns a{
@@ -2151,8 +2218,11 @@
     }
     .add--management {
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .add--management .add--store-btn{
         margin-bottom: 16px;
