@@ -441,6 +441,13 @@
         width: 132px;
     }
 
+    .management--btn-wrapper{
+        padding-right: 0;
+    }
+    .management-btns a{
+        font-size: 18px;
+    }
+    
 }
 
 @media (min-width:1200px) and (max-width:1399px){
@@ -752,7 +759,26 @@
     .single--template-edit-delete{
         max-width:30%;
     }
+    .management--btn-wrapper {
+        padding-right: 60px;
+    }
+    .add--management{
 
+        flex-direction: column;
+        justify-content:flex-end;
+        
+    }
+    .add--management .import--btn{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .add--management .add--store-btn{
+        width: 124px;
+    }
+    .add--management .delete--btn{
+        margin-top: 16px;
+        margin-left: 0;
+    }
 }
 
 @media ( min-width:992px) and (max-width:1199px){
@@ -1127,6 +1153,29 @@
     }
     .single--template-details{
         padding: 16px 8px 0 8px;
+    }
+    .management--btn-wrapper {
+        padding-right: 80px;
+    }
+    .add--management{
+
+        flex-direction: column;
+        justify-content:flex-end;
+        
+    }
+    .management-btns a{
+        font-size:18px;
+    }
+    .add--management .import--btn{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .add--management .add--store-btn{
+        width: 132px;
+    }
+    .add--management .delete--btn{
+        margin-top: 16px;
+        margin-left: 0;
     }
 }
 
@@ -1546,6 +1595,33 @@
         flex-basis: 100%;
         margin-right: 0;
     }
+
+    .management--btn-wrapper{
+        flex-wrap: wrap;
+        justify-content:center;
+        padding-right: 0;
+    }
+    .management-btns a{
+        width:100%;
+        margin-bottom: 16px;
+    }
+
+    .add--management {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search--role--store-wrapper .search--wrapper, 
+    .search--role--store-wrapper .roles--wrapper,
+    .search--role--store-wrapper .role--types-wrpper, 
+    .search--role--store-wrapper .store--select-wrapper{
+        max-width: 48%;
+    }
+    .search--role--store-wrapper .search--wrapper, 
+    .search--role--store-wrapper .roles--wrapper{
+        margin-bottom: 16px;
+    }
+
 }
 
 @media (min-width:320px) and (max-width:767px){
@@ -1962,13 +2038,13 @@
         font-size:18px;
     }
     .notification--profile a:not(:first-child) {
-        margin-left: 20px;
+        margin-left: 12px;
     }
     .notification--profile .profile img {
         width: 36px;
     }
     .notification--profile #toggle__menu{
-        margin-left: 20px;
+        margin-left: 12px;
     }
     .not-collapsed .esl--sidenav-area {
         width: 260px;
@@ -2060,5 +2136,45 @@
     }
     .single--template-edit-delete {
         max-width: 100%;
+    }
+    .management--btn-wrapper{
+        flex-wrap: wrap;
+        justify-content:center;
+        padding-right: 0;
+    }
+    .management-btns a{
+        width:100%;
+        margin-bottom: 16px;
+    }
+    .add--management {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .add--management .add--store-btn{
+        margin-bottom: 16px;
+    }
+    .add--management .delete--btn{
+        margin-left: 0;
+    }
+    .staff--management-data-table table{
+        width:800px;
+    }
+
+    .search--role--store-wrapper .search--wrapper, 
+    .search--role--store-wrapper .roles--wrapper,
+    .search--role--store-wrapper .role--types-wrpper, 
+    .search--role--store-wrapper .store--select-wrapper{
+        max-width: 100%;
+    }
+    .search--role--store-wrapper .search--wrapper, 
+    .search--role--store-wrapper .roles--wrapper,
+    .search--role--store-wrapper .role--types-wrpper{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .search--role--store-wrapper .store--select-wrapper{
+        margin-right: 0;
     }
 }

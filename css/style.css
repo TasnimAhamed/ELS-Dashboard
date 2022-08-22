@@ -1294,6 +1294,7 @@ p{
     color: rgba(0, 0, 0, 0.5);
     box-shadow: none;
     outline: 0;
+    background:#F3F3F3;
 }
 .add--store-btn{
     display: inline-flex;
@@ -1382,6 +1383,7 @@ p{
     width: 100%;
     padding:5px 12px;
     outline:0;
+    background:#F3F3F3;
 }
 .store--img-wrapper{
     display:flex;
@@ -1640,6 +1642,7 @@ p{
     outline: 0;
     box-shadow:none;
     height: 40px;
+    background:#F3F3F3;
 }
 .system--template-wrapper{
     display:flex;
@@ -1782,4 +1785,29 @@ p{
 }
 .upload--file input{
     display: none;
+}
+.search--role--store-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+}
+.search--role--store-wrapper .search--wrapper,
+.search--role--store-wrapper .roles--wrapper,
+.search--role--store-wrapper .role--types-wrpper,
+.search--role--store-wrapper .store--select-wrapper{
+    width: 100%;
+    max-width:190px;
+    margin-right: 10px;
+}
+.search--role--store-wrapper .search--wrapper input,
+.search--role--store-wrapper .roles--wrapper select,
+.search--role--store-wrapper .role--types-wrpper select,
+.search--role--store-wrapper .store--select-wrapper select{
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding:5px 12px;
+    outline:0;
+    background:#F3F3F3;
 }
